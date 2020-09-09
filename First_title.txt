@@ -20,30 +20,30 @@ public class HelloWorldApp{
 
 
 4．编译并运行下面的Java Application程序，写出运行结果。
-1：	public class MyClass {
-2：	    private int day;
-3：	    private int month;
-4：	    private int year;
-5：	    public MyClass() {
-6：	    	day = 1;
-7：	    	month = 1;
-8：	    	year = 1900;
-9：	    }
-10：	public MyClass(int d,int m,int y) {
-11：	    day = d;
-12：	    month = m;
-13：	    year = y;
-14：	}
-15：	public void display(){
-16：	    System.out.println(day + "-" + month + "-" + year);	
-17：	}
-18：	public static void main(String args[ ]) {
-19：	    MyClass m1 = new MyClass();
-20：	    MyClass m2 = new MyClass(25,12,2001);
-21：	    m1.display();
-22：	    m2.display();
-23：	}
-24：}
+	public class MyClass {
+	    private int day;
+	    private int month;
+	    private int year;
+	    public MyClass() {
+	    	day = 1;
+	    	month = 1;
+	    	year = 1900;
+	    }
+	public MyClass(int d,int m,int y) {
+	    day = d;
+	    month = m;
+	    year = y;
+	}
+	public void display(){
+	    System.out.println(day + "-" + month + "-" + year);	
+	}
+	public static void main(String args[ ]) {
+	    MyClass m1 = new MyClass();
+	    MyClass m2 = new MyClass(25,12,2001);
+	    m1.display();
+	    m2.display();
+	}
+}
 
 
 运行结果：
