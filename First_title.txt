@@ -1,0 +1,53 @@
+实验1：Java开发环境J2SE
+一、实验目的
+（1）学习从网络上下载并安装J2SE开发工具。
+（2）学习编写简单的Java Application程序.
+（3）了解Java源代码、字节码文件，掌握Java程序的编辑、编译和运行过程。
+二、实验任务
+从网络上下载或从CD-ROM直接安装J2SE开发工具，编写简单的Java Application程序，编译并运行这个程序。
+三、实验内容
+1．安装J2SE开发工具
+Sun公司为所有的java程序员提供了一套免费的java开发和运行环境，取名为Java 2 SDK，可以从http://java.sun.com上进行下载。安装的时候可以选择安装到任意的硬盘驱动器上，例如安装到C:\j2sdk1.4.1_03目录下。教师通过大屏幕演示J2SE的安装过程，以及在Windows98/2000/2003下环境变量的设置方法。
+2．安装J2SE源代码编辑工具Edit Plus
+教师通过大屏幕演示Edit Plus的安装过程，以及在Windows98/2000/2003操作系统环境下编辑Java原程序的常用命令的用法。
+3．编写并编译、运行一个Java Application程序。
+创建一个名为HelloWorldApp的java Application程序，在屏幕上简单的显示一句话"老师，你好!"。
+public class HelloWorldApp{
+	public static void main(String[] args){
+		System.out.println("老师，你好！");
+	}
+}
+
+
+4．编译并运行下面的Java Application程序，写出运行结果。
+1：	public class MyClass {
+2：	    private int day;
+3：	    private int month;
+4：	    private int year;
+5：	    public MyClass() {
+6：	    	day = 1;
+7：	    	month = 1;
+8：	    	year = 1900;
+9：	    }
+10：	public MyClass(int d,int m,int y) {
+11：	    day = d;
+12：	    month = m;
+13：	    year = y;
+14：	}
+15：	public void display(){
+16：	    System.out.println(day + "-" + month + "-" + year);	
+17：	}
+18：	public static void main(String args[ ]) {
+19：	    MyClass m1 = new MyClass();
+20：	    MyClass m2 = new MyClass(25,12,2001);
+21：	    m1.display();
+22：	    m2.display();
+23：	}
+24：}
+
+
+运行结果：
+    1-1-1900
+    25-12-2001
+
+
