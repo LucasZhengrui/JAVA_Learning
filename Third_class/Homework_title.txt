@@ -1,0 +1,79 @@
+实验2：Java基本数据类型
+一、实验目的
+（1）掌握javadoc文档化工具的使用方法。
+（2）掌握Java语言转义字符的功能。
+（3）理解“值传递”的过程。
+二、实验任务
+（1）利用javadoc文档化工具，将给定的Java Application源代码自动生成一系列说明文档。
+（2）输入、运行给定的Java Application程序，写出运行结果，以验证Java语言转义字符的功能。
+（3）按照要求编写Java Application程序。
+三、实验内容
+1．Javadoc文档化工具的使用
+Java 2 SDK 1.4.1中提供了一个文档自动生成工具，可以简化程序员编写文档的工作。可以使用javadoc.exe命令启动Java文档化工具，自动生成Java程序文档。
+输入下面给出的Java Application程序，利用javadoc命令生成该Java应用程序的文档，并使用浏览器IE显示生成的文档页面内容。
+1：	/* Java编程技术chapter3，CommentTest.java
+2：	  版权所有：新东方IT教育。
+3：	  作者：zlg
+4：	  日期：2001/07/01
+5：	*/
+6：	/**
+7：	  这是一个Java语言入门程序，定义类CommentTest。其中含有main()方法，因此可以作为一
+8：	  个应用程序单独执行。其功能是在默认的输出设备上输出字符串"Hi,你好！"。 
+9：	*/       
+10：	public class CommentTest {
+11：	    //主方法，作为Java应用程序的默认入口。
+12：	    public static void main(String args[ ]) {
+13：	        System.out.println("Hi,你好！"); //输出"Hi,你好！"
+14：	    }
+15：	}
+
+执行javadoc CommentTest.java指令，生成文件：
+CommentTest.html、package-frame.html、package-summary.html、package-tree.html、constant-values.html、overview-tree.html、index-all.html、deprecated-list.html、allclasses-frame.html、allclasses-noframe.html、index.html、help-doc.html。
+2．输入下面的Java Application程序，写出运行结果。
+1：	public class CharSample{
+2：	    public static void main(String args[ ]) {
+3：	    char ch1 = '\b';
+4：	    char ch2 = '\t';
+5：	    char ch3 = '\n';
+6：	    char ch4 = '\r';
+7：	    char ch5 = '\"';
+8：	    char ch6 = '\'';
+9：	    char ch7 = '\\';
+10：	System.out.println("沈阳"+ch1+"师范大学");
+11：	System.out.println("沈阳"+ch2+"师范大学");
+12：	System.out.println("沈阳"+ch3+"师范大学");
+13：	System.out.println("沈阳"+ch4+ch3+"师范大学");
+14：	System.out.println(ch5+"沈阳"+"师范大学"+ch5);
+15：	System.out.println(ch6+"沈阳"+"师范大学"+ch6);
+16：	System.out.println(ch7+"沈阳"+"师范大学"+ch7);
+17：	}
+18：}
+
+  
+3．按下面的要求完成Java Application程序，写出程序的运行结果。
+（1）定义一个Java类Point，用来描述平面直角坐标系中点的坐标，该类应该能描述点的横、纵坐标信息及一些相关操作，包括获取点的横、纵坐标，修改点的坐标，显示点的当前位置等。
+（2）定义一个测试类javaTest，创建Point类的对象并对其进行有关的操作。
+class Point{
+	double x,y;
+	public void setXY(double a,double b){
+		x=a;
+		y=b;
+	}
+	public double getX(){
+		return x;
+	}
+	public double getY(){
+		return y;
+	}
+	public void disp(){
+		System.out.println("点的当前坐标为：("+x+", "+y+")");
+	}
+};
+public class javaTest{
+	public static void main(String[] args){
+		Point p1=new Point();
+		p1.disp();
+		p1.setXY(3.2,5.6);
+		p1.disp();
+	}
+}
