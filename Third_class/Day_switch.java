@@ -1,6 +1,6 @@
 package while_for_dowhile;
 
-import java.util.Scanner;
+import java.util.Scanner; // 引用Scanner
 
 public class Day_print {
 
