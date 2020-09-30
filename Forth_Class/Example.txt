@@ -1,0 +1,53 @@
+
+
+例： 一个遍历数组的Java演示程序（ArrayDemo.java）
+
+
+public class ArrayDemo {                  // 主类
+    public static  void main(String[] args) {  // 主方法
+        int iArray[ ] = { 2, 4, 6, 8, 10 };              // 定义一个int型数组iArray，定义时初始化
+        for (int n = 0; n < iArray.length; n++)  // 遍历数组，逐个显示各数组元素的值
+            System.out.println( iArray[n] );        // 显示第n个元素的值
+        // 遍历数组，计算各数组元素的累加和
+        int sum = 0;
+        for (int n = 0; n < iArray.length; n++)
+            sum += iArray[n];  // 累加第n个数组元素
+        System.out.println( sum );
+ 
+        char cArray[ ] = { 'C', 'h', 'i', 'n', 'a' };           // 定义一个字符型数组cArray，定义时初始化
+        for (int n = 0; n < cArray.length; n++) {      // 遍历数组，将所有小写字母改为大写
+            if (cArray[n] >= 'a' && cArray[n] <= 'z’)  // 检查第n个元素是否小写字母
+                cArray[n] -= 32;                                     // 如果是，则将小写字母改为大写
+        }
+        System.out.println( cArray );                      // 只有字符数组才能整体输出，显示结果：CHINA
+}  }
+
+
+
+
+例：一个具有可变长形参的求最大值方法Java演示程序（VarArgument.java）
+
+
+public class VarArgument {  // 主类
+    public static  int max(int ...varArgs) {  // 具有可变长形参的求最大值方法
+        // 可变长形参varArgs所接收到的实参是以数组形式存放的，varArgs是一个数组
+        if (varArgs.length < 1)  return 0;       // 如果没有传递实参，则直接返回0
+        int result = varArgs[0];                // 先假设第0个元素就是最大值
+        for (int n = 1; n < varArgs.length; n++) {  // 求数组元素中的最大值
+            if (varArgs[n] > result)  result = varArgs[n];
+        }
+        /*  也可使用以下的增强for语句来求最大值
+        for (int e : varArgs)
+        {  if (e > result)  result = e;  }
+        */
+        return result;
+    }
+ 
+    public static  void main(String[] args) {    // 主方法
+        System.out.println( max(2, 4) );      // 传递2个实参，显示结果：4
+        System.out.println( max(2, 4, 6) );    // 传递3个实参，显示结果：6
+        System.out.println( max(2, 4, 6, 8) );  // 传递4个实参，显示结果：8
+        System.out.println( max(2) );        // 传递1个实参，显示结果：2
+        System.out.println( max() );         // 不传递实参，显示结果：0
+}  }
+
