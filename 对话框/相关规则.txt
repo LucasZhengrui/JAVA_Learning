@@ -1,0 +1,48 @@
+import javax.swing.JOptionPane导入类
+
+主要用到四种消息提示框方法： 
+showConfirmDialog()：确认对话框（左上角问号图标）
+showInputDialog()：输入对话框（左上角问号图标） 
+showMessageDialog()：消息对话框 （左上角i图标（information的缩写i））
+showOptionDialog()：选择对话框
+
+主要有五种消息类型，类型不同，图标不同： 
+• ERROR_MESSAGE 
+• INFORMATION_MESSAGE 
+• WARNING_MESSAGE 
+• QUESTION_MESSAGE 
+• PLAIN_MESSAGE 
+
+通过调用不同方法，并输入不同参数可以得到不同的对话框 
+参数及其含义： 
+parentComponent 对话框所在的容器 
+message 提示消息 
+title 标题 
+optionType 选择按钮类型 
+messageType 消息类型 
+icon 自定义消息图标 
+initialSelectionValue 默认选项或信息 
+selectionValues 选择选项 
+options 操作选项
+
+JOptionPane.showConfirmDialog有四种参数设置类型 
+JOptionPane.showConfirmDialog(parentComponent, message) 
+ JOptionPane.showConfirmDialog(parentComponent, message, title, optionType) 
+ JOptionPane.showConfirmDialog(parentComponent, message, title, optionType, messageType) 
+ JOptionPane.showConfirmDialog(parentComponent, message, title, optionType, messageType, icon)
+
+JOptionPane.showInputDialog有六种参数设置类型 
+JOptionPane.showInputDialog(message); 
+ JOptionPane.showInputDialog(parentComponent, message); 
+ JOptionPane.showInputDialog(message, initialSelectionValue); 
+ JOptionPane.showInputDialog(parentComponent, message, initialSelectionValue) 
+ JOptionPane.showInputDialog(parentComponent, message, title, messageType); 
+ JOptionPane.showInputDialog(parentComponent, message, title, messageType, icon, selectionValues, initialSelectionValue)
+
+JOptionPane.showMessageDialog有三种参数设置 
+JOptionPane.showMessageDialog(parentComponent, message); 
+ JOptionPane.showMessageDialog(parentComponent, message, title, messageType); 
+ JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
+
+JOptionPane.showOptionDialog只有一种参数设置 
+JOptionPane.showOptionDialog(parentComponent, message, title, optionType, messageType, icon, options, initialValue)
