@@ -13,3 +13,9 @@ public class Java_1 {
         }
     }
 }
+
+
+// (1)i<6 
+// (2)System.out.print(" ") 
+// (3)int j=1 
+// (4)System.out.println() 
