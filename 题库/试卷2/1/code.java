@@ -1,3 +1,15 @@
+// 本题的要求是∶ 
+// 请阅读Java_2.java 应用实例，完成程序并运行得结果为∶ 
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4 
+// 1 2 3 4 5 
+// 1 2 3 4 5 6 
+// 【第一空】 参考答案∶int[6] 
+// 【第二空】 参考答案∶ aMatrix.length或 6 
+
+
 public class Java_1
 {
     public static void main(String args[])
@@ -15,10 +27,3 @@ public class Java_1
         System.out.println("Count = " + ______________);
     }  
 }
-
-
-
-
-// (1)count=0 
-// (2)i%3==0 
-// (3)count
