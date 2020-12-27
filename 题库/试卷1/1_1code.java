@@ -19,3 +19,8 @@ public class Java_1
    }
 }
 
+
+
+// 【第一空】 参考答案∶ main 
+// 【第二空】 参考答案∶ String 
+// 【第三空】 参考答案:long 
