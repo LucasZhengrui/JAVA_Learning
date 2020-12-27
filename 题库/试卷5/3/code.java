@@ -1,3 +1,7 @@
+// 【第一空】 参考答案∶listener 
+// 【第二空】 参考答案∶ ActionListener 
+// 【第三空】 参考答案∶ Performed 
+
 //程序的功能是从1开始，每秒打印一个递增的整数。
 import java.awt.*;
 import java.awt.event.*;
