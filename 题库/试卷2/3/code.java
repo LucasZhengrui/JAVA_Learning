@@ -1,3 +1,7 @@
+// 【第一空】 参考答案∶ ActionListener 
+// 【第二空】 参考答案;  this 
+// 【第三空】 参考答案∶ workSum 
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
