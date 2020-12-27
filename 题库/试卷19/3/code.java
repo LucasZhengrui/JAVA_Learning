@@ -1,3 +1,12 @@
+// 本题的要求是∶ 
+// 在考生文件夹中存有文本文件a.txt。在命令行下输入java Java_3 a.txt b.txt 运行。程序的运行结果是将a.txt的内容拷贝到b.txt文件中。并在命令屏幕上显示如下; 
+// has donel
+// 【第一空】 参考答案∶"a.txt" 
+// 【第二空】 参考答案∶"b.txt" 
+// 【第三空】参考答案：b
+// 【第四空】 参考答案∶ close 
+// 【第五空】 参考答案∶ close 
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
